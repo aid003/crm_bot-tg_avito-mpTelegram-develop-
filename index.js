@@ -30,7 +30,7 @@ async function main() {
           isAdmin = true;
           await bot_tg.sendMessage(
             msg.chat.id,
-            "Функционала для админов не завезли. \n\n\n*_ДЕНЕГ НЕТ_*"
+            "Функционала для админов не завезли. \n\n\n*_ДЕНЕГ НЕТ_*\n\np.s Во всем виноват паша"
           );
           break;
         }
