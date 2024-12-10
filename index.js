@@ -53,6 +53,14 @@ async function main() {
               msg.chat.id,
               msg.message_id
             );
+            await bot_tg.sendMessage(
+              process.env.ID_CHAT,
+              `Username клиента -> ${
+                msg.from.username
+                  ? "@" + msg.from.username
+                  : String(msg.from.id)
+              }`
+            );
           } catch (error) {
             console.log(error);
           }
